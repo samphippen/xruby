@@ -1,62 +1,63 @@
-require_relative "./wordy"
+require_relative './wordy'
 
 RSpec.describe WordProblem do
-  it "can add one to one" do
-    problem = WordProblem.new("What is 1 plus 1?")
+  it 'can add one to one' do
+    # pending 'Comment the other pending statements as you solve these'
+    problem = WordProblem.new('What is 1 plus 1?')
 
     expect(problem.answer).to eq(2)
   end
 
-  it "can add two to fifty three" do
-    skip "fix this test second - delete the `skip` lines to enable individual tests"
+  it 'can add two to fifty three' do
+    pending 'fix this test second'
 
     problem = WordProblem.new('What is 53 plus 2?')
 
     expect(problem.answer).to eq(55)
   end
 
-  it "can add negative numbers together" do
-    skip "fix this test third"
+  it 'can add negative numbers together' do
+    pending 'fix this test third'
 
     problem = WordProblem.new('What is -1 plus -10?')
 
     expect(problem.answer).to eq(-11)
   end
 
-  it "can add larger numbers together" do
-    skip "fix this test fourth"
+  it 'can add larger numbers together' do
+    pending 'fix this test fourth'
 
     problem = WordProblem.new('What is 123 plus 45678?')
 
     expect(problem.answer).to eq(45_801)
   end
 
-  it "can subtract numbers from each other" do
-    skip "fix this test fifth"
+  it 'can subtract numbers from each other' do
+    pending 'fix this test fifth'
 
     problem = WordProblem.new('What is 4 minus -12?')
 
     expect(problem.answer).to eq(16)
   end
 
-  it "can multiply numbers together" do
-    skip "fix this test sixth"
+  it 'can multiply numbers together' do
+    pending 'fix this test sixth'
 
     problem = WordProblem.new('What is -3 multiplied by 25?')
 
     expect(problem.answer).to eq(-75)
   end
 
-  it "can divide two numbers" do
-    skip "fix this test seventh"
+  it 'can divide two numbers' do
+    pending 'fix this test seventh'
 
     problem = WordProblem.new('What is 33 divided by -3?')
 
     expect(problem.answer).to eq(-11)
   end
 
-  it "can add numbers together multiple times" do
-    skip "fix this test eight"
+  it 'can add numbers together multiple times' do
+    pending 'fix this test eight'
 
     question = 'What is 1 plus 1 plus 1?'
     problem = WordProblem.new(question)
@@ -64,8 +65,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(3)
   end
 
-  it "can add and then subtract a number" do
-    skip "fix this test ninth"
+  it 'can add and then subtract a number' do
+    pending 'fix this test ninth'
 
     question = 'What is 1 plus 5 minus -2?'
     problem = WordProblem.new(question)
@@ -73,8 +74,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(8)
   end
 
-  it "can subtract numbers twice" do
-    skip "fix this test tenth"
+  it 'can subtract numbers twice' do
+    pending 'fix this test tenth'
 
     question = 'What is 20 minus 4 minus 13?'
     problem = WordProblem.new(question)
@@ -82,8 +83,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(3)
   end
 
-  it "can subtract then add a number" do
-    skip "fix this test eleventh"
+  it 'can subtract then add a number' do
+    pending 'fix this test eleventh'
 
     question = 'What is 17 minus 6 plus 3?'
     problem = WordProblem.new(question)
@@ -91,8 +92,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(14)
   end
 
-  it "can multiply numbers twice" do
-    skip "fix this test twelth"
+  it 'can multiply numbers twice' do
+    pending 'fix this test twelth'
 
     question = 'What is 2 multiplied by -2 multiplied by 3?'
     problem = WordProblem.new(question)
@@ -100,8 +101,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(-12)
   end
 
-  it "can add then multiply numbers" do
-    skip "fix this test thirtheenth"
+  it 'can add then multiply numbers' do
+    pending 'fix this test thirtheenth'
 
     question = 'What is -3 plus 7 multiplied by -2?'
     problem = WordProblem.new(question)
@@ -109,8 +110,8 @@ RSpec.describe WordProblem do
     expect(problem.answer).to eq(-8)
   end
 
-  it "can divide numbers twice" do
-    skip "fix this test fourteenth"
+  it 'can divide numbers twice' do
+    pending 'fix this test fourteenth'
 
     question = 'What is -12 divided by 2 divided by -3?'
     problem = WordProblem.new(question)
@@ -119,7 +120,7 @@ RSpec.describe WordProblem do
   end
 
   it "can't do advanced math" do
-    skip "fix this test fifteenth"
+    pending 'fix this test fifteenth'
 
     problem = WordProblem.new('What is 53 cubed?')
 
@@ -127,7 +128,7 @@ RSpec.describe WordProblem do
   end
 
   it "can't answer irrelevant questions" do
-    skip "fix this test sixteenth"
+    pending 'fix this test sixteenth'
 
     problem = WordProblem.new('Who is the president of the United States?')
 
